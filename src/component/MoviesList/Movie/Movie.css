@@ -1,18 +1,14 @@
 .MovieTile{
     width: 500px;
-    height: 300px;
-    background-color: pink;
+    height: auto;
+    margin-bottom: 40px;
 }
 
 .WrapTile{
     display: flex;
     flex-direction: row;
-
 }
 
-.WrapTile img{
-    height: 100%;
-}
 .WrapWrapTile{
     display: flex;
     background-color: rgb(63, 45, 45);

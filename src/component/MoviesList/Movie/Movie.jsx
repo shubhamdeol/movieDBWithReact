@@ -1,20 +1,26 @@
 import React from 'react';
 import Style from './Movie.css';
+import Button from '../../../UI/Button/Button';
 
 const movie = (props) => {
     const movieTileData = { ...props, poster_path: "https://image.tmdb.org/t/p/w200"+props.poster_path }
     return(
         <div className = {Style.MovieTile}>
-           <div >
+           
                 <div className={Style.WrapTile}>
                     <img src={movieTileData.poster_path} alt={movieTileData.title}/>
                     <div className={Style.WrapWrapTile}>
                         <h4>{movieTileData.title}</h4>
-                        <h5>{movieTileData.release_date}</h5>
+                        <h5>Releasing On: {movieTileData.release_date}</h5>
                         <p>{movieTileData.overview}</p>
+                    <Button clicked={props.clicked} btnType="Success">
+                        View Details
+                    </Button>
+                        
                     </div>
+                    
                 </div>
-           </div>
+           
         </div>
     )
 }

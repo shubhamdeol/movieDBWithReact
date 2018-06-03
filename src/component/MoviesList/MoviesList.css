@@ -1,7 +1,7 @@
 .TilesWrapper {
     display: flex;
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
     justify-content: space-between;
     flex-wrap: wrap;
 }

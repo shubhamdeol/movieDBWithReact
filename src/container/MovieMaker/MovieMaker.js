@@ -10,15 +10,13 @@ class MovieMaker extends Component {
     }
     
         componentDidMount() {
-            axios.get("https://api.themoviedb.org/3/list/3?api_key=bbae21037470474bef1ed1150be432a3&language=en-US")
-                .then( res => {
-                    
+            axios.get("/3/list/3")
+                .then( res => {                    
                     this.setState({
                         movies: res.data
                     })
-                }
-
-                )
+                })
+                .catch( err => console.log(err))
         }
 
 render() {
