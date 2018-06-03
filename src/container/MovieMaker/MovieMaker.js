@@ -6,9 +6,14 @@ class MovieMaker extends Component {
     
     state = {
         search: '',
-        movies: ""
+        movies: "",
     }
-    
+        movieDetailHandler = (id) => {
+                this.props.history.push({
+                    pathname: "/movie/"+id
+                })
+        }
+
         componentDidMount() {
             axios.get("/3/list/3")
                 .then( res => {                    
@@ -21,13 +26,11 @@ class MovieMaker extends Component {
 
 render() {
         
-    const movies = this.state.movies ? <MoviesList movies={this.state.movies} /> : "waiting to load" 
+    const movies = this.state.movies ? <MoviesList movies={this.state.movies} clicked={this.movieDetailHandler}/> : "waiting to load" 
             
         return(
             <Aux>
-            
-            {movies}
-
+               {movies}
             </Aux>
         )
     }

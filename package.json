@@ -2,6 +2,10 @@
   "name": "searchinmovies",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.0.0",
+    "node": "v8.10.0"
+  },
   "dependencies": {
     "autoprefixer": "7.1.6",
     "axios": "^0.18.0",
