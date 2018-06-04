@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import Aux from '../../hoc/Aux/Aux';
 import MoviesList from '../../component/MoviesList/MoviesList';
 import axios from 'axios';
+import Spinner from '../../UI/Spinner/Spinner';
 class MovieMaker extends Component {
     
     state = {
@@ -26,7 +27,8 @@ class MovieMaker extends Component {
 
 render() {
         
-    const movies = this.state.movies ? <MoviesList movies={this.state.movies} clicked={this.movieDetailHandler}/> : "waiting to load" 
+    const movies = this.state.movies ? <MoviesList movies={this.state.movies}
+     clicked={this.movieDetailHandler}/> : <Spinner /> 
             
         return(
             <Aux>

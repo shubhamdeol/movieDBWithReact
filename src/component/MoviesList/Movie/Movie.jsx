@@ -8,15 +8,19 @@ const movie = (props) => {
         <div className = {Style.MovieTile}>
            
                 <div className={Style.WrapTile}>
-                    <img src={movieTileData.poster_path} alt={movieTileData.title}/>
+                    <div className={Style.WrapImg}>
+                    <img src={movieTileData.poster_path} alt={movieTileData.title} />
+                    </div>
+                    
                     <div className={Style.WrapWrapTile}>
                         <h4>{movieTileData.title}</h4>
                         <h5>Releasing On: {movieTileData.release_date}</h5>
-                        <p>{movieTileData.overview}</p>
+                    <span>Votes:{movieTileData.vote_count}</span>
+                    <span>Avg Votes:{movieTileData.vote_average}</span>
                     <Button clicked={props.clicked} btnType="Success">
                         View Details
                     </Button>
-                        
+                   
                     </div>
                     
                 </div>

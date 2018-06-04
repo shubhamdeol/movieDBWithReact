@@ -1,17 +1,25 @@
 .MovieTile{
-    width: 500px;
-    height: auto;
+    width: 400px;
+    max-height: 270px;
     margin-bottom: 40px;
+    background-color: rgb(40, 117, 53);
 }
 
 .WrapTile{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
+.WrapImg{
+    height: 270px;
+}
+
+.WrapImg img{
+    max-height: 100%;
+}
 .WrapWrapTile{
     display: flex;
-    background-color: rgb(63, 45, 45);
     padding: 0 13px;
     flex-direction: column;
     width: 287px;

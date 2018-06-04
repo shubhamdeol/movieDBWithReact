@@ -1,0 +1,44 @@
+.MovieDetails{
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px auto;
+    border: 2px solid red;
+    flex-wrap: wrap;
+}
+.MovieDetails img{
+    max-height: 100%;
+}
+
+.fade{
+    width: 90%;
+    margin: 0 auto;
+}
+.Desc {
+    padding: 20px;
+    width: 600px;
+}
+
+@media(max-width: 600px) {
+    .Desc{
+        width: 200px;
+    }
+    .Poster{
+        width:200px;
+    }
+}
+
+.Poster{
+    width: 400px;
+}
+
+.CastWrap{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}

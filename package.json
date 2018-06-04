@@ -2,6 +2,7 @@
   "name": "searchinmovies",
   "version": "0.1.0",
   "private": true,
+  "homepage": "",
   "engines": {
     "npm": "6.0.0",
     "node": "v8.10.0"

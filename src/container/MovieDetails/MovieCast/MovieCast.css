@@ -1,0 +1,11 @@
+.Cast{
+    width: 200px;
+    height: auto;
+
+}
+
+.Desc{
+    background-color: rgba(165, 42, 42, 0.562);
+    padding: 10px;
+    box-sizing: border-box;
+}

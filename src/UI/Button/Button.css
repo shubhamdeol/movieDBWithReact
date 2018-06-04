@@ -18,6 +18,9 @@
 .Success {
     color: #5C9210;
 }
+.Success:hover {
+    color: rgb(67, 102, 18);
+}
 
 .Danger {
     color: #944317;
