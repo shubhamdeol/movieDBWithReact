@@ -47,11 +47,10 @@ class MovieDetails extends Component {
                       };
       var sectionStyle = {
         width: "90%",
-        height: "500px",
+        height: "auto",
         backgroundImage: `url( ${movieData.backdrop_path })`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        zIndex: "-1",
       };
 
         rendermovie = (
@@ -61,8 +60,11 @@ class MovieDetails extends Component {
                 <img src={movieData.poster_path} alt={movieData.title} />
               </div>
               <div className={Style.Desc}>
-                <h2>{movieData.title} ({movieData.popularity})</h2>
+                <h2>{movieData.title} ({movieData.popularity.toFixed(1)})</h2>
                 <b>{movieData.tagline}</b>
+                <br/>
+                <br/>
+                <b>Rating: {movieData.popularity.toFixed(1)}</b>
                 <br/>
                 <br/>
                 {movieData.production_companies[0].name}

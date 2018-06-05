@@ -13,10 +13,15 @@ const movie = (props) => {
                     </div>
                     
                     <div className={Style.WrapWrapTile}>
-                        <h4>{movieTileData.title}</h4>
-                        <h5>Releasing On: {movieTileData.release_date}</h5>
-                    <span>Votes:{movieTileData.vote_count}</span>
+                        <h5>{movieTileData.title}
+                        <br/>
+                        <span>Releasing On: {movieTileData.release_date}</span>
+                        </h5>
+                    <div className={Style.Votes}>
+                        <span>Votes:{movieTileData.vote_count}</span>
+                    <br/>
                     <span>Avg Votes:{movieTileData.vote_average}</span>
+                    </div>
                     <Button clicked={props.clicked} btnType="Success">
                         View Details
                     </Button>

@@ -2,7 +2,8 @@
     width: 400px;
     max-height: 270px;
     margin-bottom: 40px;
-    background-color: rgb(40, 117, 53);
+    background-color: #FFFFFF;
+    box-shadow: 5px #ffffff;
 }
 
 .WrapTile{
@@ -22,7 +23,20 @@
     display: flex;
     padding: 0 13px;
     flex-direction: column;
-    width: 287px;
-    text-align: center;
-    
+    width: 300px;
+    }
+
+    .WrapWrapTile h5 {
+    color: rgba(10, 1, 1, 0.829);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.WrapWrapTile h5 span{
+    font-size: 14px;
+}
+
+.Votes {
+    font-size: 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

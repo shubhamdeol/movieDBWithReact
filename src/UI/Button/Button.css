@@ -20,6 +20,7 @@
 }
 .Success:hover {
     color: rgb(67, 102, 18);
+    text-decoration: underline;
 }
 
 .Danger {
