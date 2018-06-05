@@ -67,7 +67,8 @@ class MovieDetails extends Component {
                 <b>Rating: {movieData.popularity.toFixed(1)}</b>
                 <br/>
                 <br/>
-                {movieData.production_companies[0].name}
+
+              { movieData.production_companies[0] ? movieData.production_companies[0].name : "Not in Db"}
                 <br/>
                 <br/>
                 <div><b>Overview:</b></div>
