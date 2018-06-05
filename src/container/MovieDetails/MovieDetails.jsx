@@ -68,7 +68,7 @@ class MovieDetails extends Component {
                 <br/>
                 <br/>
 
-              { movieData.production_companies[0] ? movieData.production_companies[0].name : "Not in Db"}
+                <b>Production:</b> { movieData.production_companies[0] ? movieData.production_companies[0].name : "Not in Db"}
                 <br/>
                 <br/>
                 <div><b>Overview:</b></div>
