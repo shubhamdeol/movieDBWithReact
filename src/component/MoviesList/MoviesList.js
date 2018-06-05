@@ -16,7 +16,7 @@ const moviesList = (props) => {
         return (
         <Aux>
             <div className={Style.Search}> 
-                    <h1 style={{ "color": "rgb(48, 145, 181)", textAlign: "center" }}> {movies.description}</h1>   
+                    <h1 style={{ color: "#0A8406", textAlign: "center" }}> {movies.description}</h1>   
                 <Search />
             </div>
             <div className = {Style.TilesWrapper}>
